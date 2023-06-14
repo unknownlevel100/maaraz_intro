@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-image: url('maaraz_pic.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+            }
+      h1 {
+        color: #00b2ca;
+      }
+      #raza {
+        color: #7dcfb6;
+        font-size: huge;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      .center {
+        padding: 70px 70px;
+        text-align: center;
+      }
+
+      .button {
+  display: inline-block;
+  border-radius: 50px;
+  background-color: rgb(0, 81, 128);
+  border: none;
+  color: #7dcfb6;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.lbl{
+  color: #00b2ca;
+  font-size: xx-large;
+}
+
+#fname{
+  width: auto;
+  padding: 5px;
+  counter-reset: none;
+}      
+
+.demo{
+    font-size: xx-large;
+    color: #7dcfb6;
+}
+   
+
+    </style>
+  </head>
+  <body>
+
+
+      <div class="center">
+                  <h1>Enter your TR NO for raza araz</h1>
+
+                  <label class="lbl" ="fname">TR NO:</label>
+
+                  <input type="number" id="fname" placeholder="ENTER TRNO" /><br /><br />
+          
+                  <button class="button" id="main" type="submit" onclick="myFunction()">
+                    <span>SUBMIT</span>
+                  </button>
+
+                  <button class="button" onclick="window.location.reload();">
+                  <span>CLEAR</span>
+                  </button>
+
+                  <P id="demo" class="demo"></P>
+
+      </div>
+      
+
+
+      <script>
+       function myFunction()
+       {
+         document.getElementById("demo").innerHTML = "YOU HAVE BEEN GRANTED RAZA";
+         
+       }
+      </script>
+
+      
+    
+  </body>
+  
+</html>
