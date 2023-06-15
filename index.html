@@ -77,6 +77,11 @@
     font-size: xx-large;
     color: #7dcfb6;
 }
+
+.output{
+  border: auto;
+  text-align: right;
+}
    
 
     </style>
@@ -99,6 +104,8 @@
                   <span>NEXT</span>
                   </button>
 
+                  <p class="output" id="output1"></p>
+
                   <P id="demo" class="demo"></P>
 
       </div>
@@ -111,6 +118,17 @@
          document.getElementById("demo").innerHTML = "YOU HAVE BEEN GRANTED RAZA";
          
        }
+        const txt1 = document.getElementById('fname');
+        const btn1 = document.getElementById('main');
+        const out1 = document.getElementById('output1');
+
+        function try() {
+          out1.innerHTML = txt.value;
+      
+        }
+        
+        main.addEventListner('click',try);
+        
       </script>
 
       
